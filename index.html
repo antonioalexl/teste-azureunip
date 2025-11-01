@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teste – Azure Static App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Página de teste para validar publicação de site estático no Azure." />
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div class="badge">OK</div>
+      <h1>Deploy estático funcionando 🚀</h1>
+      <p class="subtitle">
+        Se você está vendo esta página, seu serviço de aplicação estática do Azure está servindo arquivos corretamente.
+      </p>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Arquivos</h2>
+        <ul>
+          <li><code>index.html</code> — página inicial</li>
+          <li><code>styles.css</code> — estilos</li>
+          <li class="muted">Opcional: <code>404.html</code> para rotas não encontradas</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Validações rápidas</h2>
+        <ol>
+          <li>Acesse a raiz (<code>/</code>) e confirme este layout.</li>
+          <li>Teste um caminho inexistente (<code>/nao-existe</code>). Se quiser, crie um <code>404.html</code>.</li>
+          <li>Cheque o cabeçalho de resposta no navegador (Status 200 / 404 conforme a rota).</li>
+        </ol>
+      </article>
+
+      <article class="card">
+        <h2>Dicas Azure</h2>
+        <ul>
+          <li>Branch de origem configurada na criação do Static Web App.</li>
+          <li>Se usar SPA, configure rotas no <code>staticwebapp.config.json</code>.</li>
+          <li>Em App Service, ative <em>Static files</em> e aponte para a pasta do site.</li>
+        </ul>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Ambiente: <span class="chip">Produção/Preview</span> • Última publicação: <span class="chip">agora</span>
+      </p>
+      <p class="muted small">© 2025 – Página de teste estático</p>
+    </footer>
+  </main>
+</body>
+</html>
